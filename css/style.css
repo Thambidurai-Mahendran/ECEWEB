@@ -1,0 +1,228 @@
+/* '*' used to global declaration */
+
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+   font-family: "Montserrat",sans-serif;
+}
+
+header{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	padding: 30px 10%;
+	background-color: transparent;
+}
+
+li, a, button{
+	font-weight: 500;
+	font-size: 16px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.logo{
+	cursor: pointer;
+	margin-right: auto;
+
+}
+
+h1,h2{
+	color: white;
+}
+nav ul li {
+	display: inline-block;
+	padding: 10px 30px ;
+}
+
+nav ul li a:hover {
+	color: black;
+}
+
+header > button {
+	padding: 9px 40px;
+	background-color: #4caf50;
+	border: none;
+	cursor: pointer;
+	border-radius: 20px;
+	outline: none;
+}
+
+header > button:hover {
+	background-color: rgba(0, 136, 169, 0.8);
+}
+/*wrapper*/
+
+.Wrapper{
+	background: url("https://wallpaper-mania.com/wp-content/uploads/2018/09/High_resolution_wallpaper_background_ID_77701491721.jpg")no-repeat center center / cover;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position:relative;
+	z-index: 1;
+
+}
+
+.wrapper:before {
+    position: absolute;
+    content: '';
+    background-image: linear-gradient(to right, rgba(32, 40, 119, 0.95), rgba(55, 46, 149, 0.95), rgba(83, 49, 177, 0.90), rgba(114, 48, 205, 0.85), rgba(150, 41, 230, 0.95));
+    width: 250pX;
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/*css Main content */
+
+.content{
+	display: flex;
+	padding: 100px 0px;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.Main-info {
+	font-size: 60px 0px;
+	font-family: 400;
+	line-height: 2;
+}
+
+/*register button*/
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: yellow;
+    border: 2px solid red;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-outline {
+    border-radius: 30px;
+    color: #ffffff;
+    border-color: #ffffff;
+    padding: 12px 30px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+}
+
+.btn-outline:hover {
+    background: #ffffff;
+    color: #6730e3;
+}
+
+i.fa{
+	margin-right: 20px;
+}
+
+/*social links */
+
+.social-links{
+	padding: 20px;
+	margin-top: 140px;
+}
+
+.social-links ul {
+	list-style: none;
+	display: flex;
+
+}
+
+.social-links ul li a{
+	padding: 20px ;
+}
+
+.bg-facebook{
+	background-color: blue;
+	margin-right: 10px;
+}
+
+.bg-instagram{
+	background-color: deeppink;
+	margin-left: 15px;
+}
+
+
+/*for fixed position*/
+
+
+/*footer*/
+
+
+/*moving-object*/
+
+.moving-object {
+	color: white;
+}
+
+.head123{
+	color: white;
+	padding-left: 180px;
+	margin-top: 45px;
+}
+
+/*For Mobiles View*/
+
+@media only screen and (max-width: 600px)
+{
+   h1{
+   	font-family: serif;
+   	text-align: center;
+   	margin-left:120px ;
+   	margin-top: -30px;
+   	margin-right: 20px;
+   	text-shadow: 40px;
+   	width: 100px;
+   	height: 150px;
+   	margin-bottom: 50px;
+   	font-size: 20px;
+   	text-shadow: 1px 2px;
+   }
+   h2
+   {
+   	 text-align: center;
+   	 margin-left: 75px;
+   	 margin-right: 65px;
+   	 margin-top: -20px;
+   	 font-size: 15px;
+   }
+   .head123
+   {
+   	  margin-top: 30px;
+   	  font-size: 17px;
+   	  font-family: serif;
+   	  text-align: center;
+   	  margin-right: 90px;
+   	  margin-left: -70px;
+   }
+   .header1
+   {
+   	  width: 110%;
+   }
+   .btn
+   {
+       margin-left: 80px;
+   }
+   .bg-facebook,.bg-instagram
+   {
+   	 font-size: 10px;
+   	 margin-left: 27px;
+   	 margin-top: -40px;
+   }
+}
